@@ -1,0 +1,9 @@
+{
+  "name": "market-ui-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/market-ui-e2e/src",
+  "implicitDependencies": ["market-ui"],
+  "// targets": "to see all targets run: nx show project market-ui-e2e --web",
+  "targets": {}
+}
