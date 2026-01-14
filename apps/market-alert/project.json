@@ -1,0 +1,41 @@
+{
+    "name": "market-alert",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "apps/market-alert/src",
+    "projectType": "application",
+    "targets": {
+        "build": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "mvn clean package -DskipTests",
+                "cwd": "apps/market-alert"
+            }
+        },
+        "test": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "mvn test",
+                "cwd": "apps/market-alert"
+            }
+        },
+        "serve": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "mvn spring-boot:run",
+                "cwd": "apps/market-alert"
+            }
+        },
+        "clean": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "mvn clean",
+                "cwd": "apps/market-alert"
+            }
+        }
+    },
+    "tags": [
+        "type:app",
+        "language:java",
+        "framework:spring-boot"
+    ]
+}
